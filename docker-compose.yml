@@ -162,3 +162,8 @@ services:
 volumes:
   mysql-data:
   graph-data:
+
+networks:
+  default:
+    name: ${APP_NETWORK}
+    external: true
